@@ -99,11 +99,9 @@ RCT_EXPORT_METHOD(setCategory:(NSString *)category options:(NSString *)options r
     NSString* cat = _categories[category];
     if (cat != nil && [[AVAudioSession sharedInstance].availableCategories containsObject:cat]) {
         NSError *error = nil;
-        if (_options[options] != nil) {
-            [[AVAudioSession sharedInstance] setCategory:cat withOptions:[_options[options] integerValue] error:&error];
-        } else {
-            [[AVAudioSession sharedInstance] setCategory:cat error:&error];
-        }
+        UInt32 categoryOptions = AVAudioSessionCategoryOptionMixWithOthers | AVAudioSessionCategoryOptionDefaultToSpeaker | AVAudioSessionCategoryOptionAllowBluetooth;
+
+        [[AVAudioSession sharedInstance] setCategory:cat withOptions:categoryOptions error:&error];
         if (error) {
             reject(@"setCategory", @"Could not set category.", error);
         } else {

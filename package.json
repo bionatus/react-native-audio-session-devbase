@@ -1,6 +1,6 @@
 {
-  "name": "react-native-audio-session",
-  "version": "0.0.6",
+  "name": "react-native-audio-session-devbase",
+  "version": "0.0.1",
   "description": "React Native module for handling the AVAudioSession instance on iOS.",
   "main": "index",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BonnierNews/react-native-audio-session.git"
+    "url": "git+https://github.com/bionatus/react-native-audio-session-devbase"
   },
   "keywords": [
     "React",
@@ -23,7 +23,10 @@
   "author": "Johan Kasperi <johan@kasperi.se>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BonnierNews/react-native-audio-session/issues"
+    "url": "https://github.com/bionatus/react-native-audio-session-devbase/issues"
   },
-  "homepage": "https://github.com/BonnierNews/react-native-audio-session#readme"
+  "homepage": "https://github.com/bionatus/react-native-audio-session-devbase#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
