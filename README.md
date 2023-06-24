@@ -6,16 +6,16 @@ A React Native module for handling category, category options and mode on the [`
 
 ## Getting started
 
-`$ yarn add react-native-audio-session`
+`$ yarn add react-native-audio-session-devbase`
 
 and then
 
-`$ react-native link react-native-audio-session`
+`$ react-native link react-native-audio-session-devbase`
 
 ## Usage
 
 ```javascript
-import AudioSession from 'react-native-audio-session'
+import AudioSession from 'react-native-audio-session-devbase'
 
 // Set AVAudioSession active
 AudioSession.setActive(true)
